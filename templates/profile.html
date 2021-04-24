@@ -4,13 +4,6 @@
 <div class="col-md6 border rounded">
     <h1>Мой Профиль</h1>
     <p><h2>Имя:</h2> <h3>{{ current_user.name }}</h3></p>
-    <p>
-        {{ form.name.label }}<br>
-        {{ form.name(class="form-control") }}<br>
-        {% for error in form.name.errors %}
-            <p class="alert alert-danger" role="alert">
-                {{ error }}
-            </p>
 </div>
 <div class="col-md6 border rounded">
     <h2>Обявления:</h2>

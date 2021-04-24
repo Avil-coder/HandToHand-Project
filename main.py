@@ -67,7 +67,6 @@ def add_news():
             news.title = form.title.data
             news.content = form.content.data
             im = request.files['file']
-            print(im)
             number_of_img = randint(0, 10000000000)
             im.save(f"static/img/new_image{number_of_img}.jpg")
             news.img = f"new_image{number_of_img}.jpg"
